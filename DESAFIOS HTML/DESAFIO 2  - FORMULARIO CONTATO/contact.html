@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet"  href="css.css">
+</head>
+
+
+<body>
+    <h1>TestinG</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend><strong>Your contact information</strong></legend>
+
+            <label for="options" title="Choose an option"><strong>Subject:</strong></label>
+            <select name="options" id="options" size="1" required title="Choose an option">
+                <option value="">Choose</option>
+                <option value="Support">Support</option>
+                <option value="Sugestion">Sugestion</option>
+                <option value="Complain">Complain</option>
+            </select>
+
+            <br><br>
+
+            <label for="Name" title="Write your full name."><strong>Your Name:</strong></label>
+            <br>
+            <input type="text" name="Name" id="Name" placeholder="Your name here" required title="Write your full name.">
+
+            <br><br>
+
+            <label for="email" title="Write email."><strong>Your E-mail:</strong></label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="email@yourdomain.com" pattern=".*.+@.*" required title="Write your email">
+            
+            <br><br>
+
+            <label for="message" title="Write your message."><strong>Message:</strong></label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10" wrap="hard" required title="Write your message."></textarea>
+            
+            <br><br>
+
+            <input type="checkbox" name="newsletter" id="newsletter" aria-label="Checkbox for email newsletter" value="newsletterAccepted" checked title="Check if you want to subscribe to the newsletter."> 
+            <label for="newsletter" title="Check if you want to subscribe to the newsletter."><strong>I want to subscribe to the newsletter.</strong></label>
+            
+
+            <br><br>
+
+            <button type="submit" id="submit" name="submit" aria-label="Submit button" title="Submit Button"><strong>Submit</strong></button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
